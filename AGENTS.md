@@ -137,21 +137,37 @@ Load `.agents/skills/NAME/SKILL.md`:
 | unclear paths, state files | operational-home-layout |
 | digest has actionable lines | session-start-recovery bootstrap-diagnostics |
 | add, remove, init project | project-management |
-| corrections, durable knowledge capture | project-management |
+| corrections, durable knowledge capture | stow |
 | secondmate create, sync, retire | secondmate-provisioning |
 | /stow | stow |
-| dispatch, spawn | harness-dispatch harness-adapters quota-array-dispatch |
+| crewmate or scout intake with dispatch profiles | harness-dispatch |
+| dispatch, spawn | harness-dispatch harness-adapters |
+| dispatch needs quota-array selection | quota-array-dispatch |
 | interrupt, exit, resume, trust prompt | harness-adapters |
-| intake, delivery, landing | task-lifecycle ship-landing scout-completion |
+| sending harness-specific skill invocation | harness-adapters |
+| verifying a harness adapter | harness-adapters |
+| intake, delivery | task-lifecycle |
+| landing a PR | ship-landing |
+| scout completion | scout-completion |
 | mid-task requirement change, steering | task-lifecycle |
-| bugs, asks, validation | diagnostic-reasoning ask-user-authority validation-supervision |
-| supervision, stuck, afk | supervision-protocol process-event-sources stuck-crewmate-recovery away-quiet-supervision |
+| bugs, failures to diagnose | diagnostic-reasoning |
+| asking the captain a question | ask-user-authority |
+| validation work | validation-supervision |
+| supervision, wake handling | supervision-protocol process-event-sources |
+| stuck, silent, or pipeline-dead crewmate | stuck-crewmate-recovery |
+| /afk, afk mode | away-quiet-supervision |
+| /quiet, quiet mode | quiet away-quiet-supervision |
+| FM_INJECT_MARK, .subsuper-* markers | supervision-protocol away-quiet-supervision |
 | captain talk, holds | captain-etiquette captain-hold-lifecycle |
 | backlog read or write | backlog-contract |
+| PR-ready handoff before completion | backlog-contract |
 | completion frees capacity, queue reconsideration | backlog-contract |
+| filing work linked to upstream issue | bearings |
 | writing or changing a brief | crewmate-briefs |
 | editing code | firstmate-coding-guidelines |
-| Relay, Orca, Codex app | fmx-respond firstmate-orca firstmate-codexapp |
+| Relay request | fmx-respond |
+| Orca operation | firstmate-orca |
+| Codex app operation | firstmate-codexapp |
 
 This table is the single trigger index: load a skill when its situation applies. Skill descriptions are secondary discovery only.
 

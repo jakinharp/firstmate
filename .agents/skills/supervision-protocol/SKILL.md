@@ -58,4 +58,4 @@ Load `away-quiet-supervision` whenever either mode is invoked, either record exi
 
 ### Stuck-worker trigger
 
-For the full `stuck-crewmate-recovery` trigger, including a live worker claiming its no-mistakes pipeline is dead, unreachable, or timed out, follow that skill's description.
+For the full `stuck-crewmate-recovery` trigger, including a live worker claiming its no-mistakes pipeline is dead, unreachable, or timed out, load it through the AGENTS.md routing table (stuck, silent, or pipeline-dead crewmate).
