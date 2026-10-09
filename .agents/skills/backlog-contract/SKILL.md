@@ -1,6 +1,6 @@
 ---
 name: backlog-contract
-description: Load before reading, writing, transitioning, or handing off a backlog item or backlog record (former AGENTS.md section 10).
+description: Load before reading, writing, transitioning, or handing off a backlog item or backlog record (former the `backlog-contract` skill).
 user-invocable: false
 metadata:
   internal: true

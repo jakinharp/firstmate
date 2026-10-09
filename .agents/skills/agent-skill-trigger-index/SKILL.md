@@ -11,7 +11,7 @@ metadata:
 The routing table in `AGENTS.md` is the single trigger index; this list only carries the full trigger wording for audits and must be updated together with that table.
 These skills are not captain-invocable; load them only at their precise triggers.
 
-- `task-lifecycle`, `supervision-protocol`, `captain-etiquette`, `backlog-contract`, `crewmate-briefs`, `harness-dispatch` - the former AGENTS.md sections 7, 8, 9, 10, 11, and 4; load per the routing table.
+- `task-lifecycle`, `supervision-protocol`, `captain-etiquette`, `backlog-contract`, `crewmate-briefs`, `harness-dispatch` - the delivery, supervision, etiquette, backlog, brief, and dispatch procedures; load per the routing table.
 
 - `operational-home-layout` - load when locating, interpreting, or changing Firstmate home, config, data, state, project, or generated runtime paths.
 - `session-start-recovery` - load when the session-start digest reports unfinished checks, actionable diagnostics, recovery inputs, or output requiring interpretation.

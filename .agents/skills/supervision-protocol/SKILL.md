@@ -1,6 +1,6 @@
 ---
 name: supervision-protocol
-description: Load when arming, running, or repairing fleet supervision, handling wake events and status lines, or applying the away-mode, quiet-mode, and stuck-worker stubs (former AGENTS.md section 8).
+description: Load when arming, running, or repairing fleet supervision, handling wake events and status lines, or applying the away-mode, quiet-mode, and stuck-worker stubs (former the `supervision-protocol` skill).
 user-invocable: false
 metadata:
   internal: true
@@ -8,7 +8,7 @@ metadata:
 
 # Supervision protocol
 
-Fleet supervision is an always-loaded operational contract; `docs/architecture.md`, `docs/turnend-guard.md`, the emitted session-start block, and script help own mechanisms and harness-specific recipes.
+Fleet supervision is an operational contract loaded on demand via the AGENTS.md routing table; `docs/architecture.md`, `docs/turnend-guard.md`, the emitted session-start block, and script help own mechanisms and harness-specific recipes.
 
 Whenever work is under way, keep exactly one live supervision cycle using the emitted protocol for this primary harness.
 Relay may require that same live cycle with no fleet work.

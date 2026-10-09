@@ -1,6 +1,6 @@
 ---
 name: crewmate-briefs
-description: Load before writing or sending a ship or scout brief to a crewmate (former AGENTS.md section 11).
+description: Load before writing or sending a ship or scout brief to a crewmate (former the `crewmate-briefs` skill).
 user-invocable: false
 metadata:
   internal: true

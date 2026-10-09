@@ -1,6 +1,6 @@
 ---
 name: task-lifecycle
-description: Load when taking in a captain request or task, dispatching and handing off to supervision, deciding the delivery path or merge authority, validating, or handling PR landing and scout outcomes (former AGENTS.md section 7).
+description: Load when taking in a captain request or task, dispatching and handing off to supervision, deciding the delivery path or merge authority, validating, or handling PR landing and scout outcomes (former the `task-lifecycle` skill).
 user-invocable: false
 metadata:
   internal: true
@@ -8,7 +8,7 @@ metadata:
 
 # Task lifecycle
 
-The delivery lifecycle is an always-loaded operational contract; referenced scripts own exact commands, flags, and data mechanics.
+The delivery lifecycle is an operational contract loaded on demand via the AGENTS.md routing table; referenced scripts own exact commands, flags, and data mechanics.
 
 ### Intake and authority
 
@@ -46,12 +46,12 @@ Record the resulting mode, `yolo` merge posture, and the one-line reason for any
 Treat file or subsystem overlap as a risk signal rather than an automatic reason to wait, and dispatch isolated work immediately with no concurrency cap when each change can be independently implemented and validated and the selected delivery path can reconcile ordinary rebases or conflicts.
 A project's declared machine capacity (`config/project-capacity`) still bounds that dispatch: a spawn beyond it exits 75 without launching, and its item stays queued rather than blocked.
 Serialize only for a true semantic dependency, shared mutable external state, incompatible concurrent migration, or another concrete condition that makes independent progress or reconciliation unsafe; same-file editing alone is insufficient, and genuine blockers remain durable.
-Write the task-specific brief under section 11 before spawning.
-Fill the task subsections according to section 11.
+Write the task-specific brief under the `crewmate-briefs` skill before spawning.
+Fill the task subsections according to the `crewmate-briefs` skill.
 
 ### Dispatch and supervision handoff
 
-Spawn only through `bin/fm-spawn.sh` after the profile and backend checks in section 4.
+Spawn only through `bin/fm-spawn.sh` after the profile and backend checks in the `harness-dispatch` skill.
 The spawn must resolve a genuine isolated task worktree distinct from the primary checkout; a failed isolation assertion stops the task.
 When the configured tasks-axi backlog gate applies, the spawn itself moves the work item to In flight and refuses rather than dispatching work this home has no item for, so recording the dispatch is never a separate step to remember; a manual-backend home retains the hand-editing contract in `docs/configuration.md`.
 After spawning, confirm the worker is processing the brief and handle any trust dialog through `harness-adapters`.
@@ -65,7 +65,7 @@ Drive a worker's lifecycle through `bin/fm-control.sh <task-id> interrupt|exit|r
 A secondmate's routed reply returns through status or a document pointer, not by firstmate peeking into its chat.
 For the parent-owned correlation, recovery, and escalation contract on marked secondmate requests, see `bin/fm-pending-reply-lib.sh`.
 When the captain adds or changes an ask mid-task, append the captain's words without added speaker labels or direct address to that brief's `## Captain's intent` and relay those words to the worker; Firstmate build constraints stay in `## Firstmate spec` or the steer.
-Supervise all live work under section 8.
+Supervise all live work under the `supervision-protocol` skill.
 
 ### Selected delivery path and merge authority
 
