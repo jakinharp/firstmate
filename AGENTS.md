@@ -52,40 +52,19 @@ Use `gh-axi` for GitHub, `chrome-devtools-axi` for browser work, and compatible 
 
 ## Routing
 
-Sections 2 to 11 live in on-demand skills; load `.agents/skills/<name>/SKILL.md` for the situation that matches.
-Section 3 in short: run `bin/fm-session-start.sh` exactly once at session start, read the whole digest, and stay read-only if the session lock is refused.
-Section 4 intake boundary: dispatch only on a verified harness and backend, only the captain changes a worker account pin, and a missing dependency or refusal is a blocker, never a silent retry elsewhere.
+Load `.agents/skills/NAME/SKILL.md`:
 
-| situation | load (skill name) |
+| situation | NAME |
 |---|---|
-| home, config, data, state, project, runtime paths (section 2) | `operational-home-layout` |
-| digest unfinished checks, diagnostics, recovery inputs, restart reconciliation (sections 3, 5) | `session-start-recovery` |
-| digest bootstrap or network diagnostic line | `bootstrap-diagnostics` |
-| add, create, remove, init a project; knowledge routing; `/stow` (section 6) | `project-management`, `stow` |
-| secondmate create, seed, launch, recover, retire; `data/secondmates.md` | `secondmate-provisioning` |
-| harness or backend choice, every crewmate or scout intake (section 4) | `harness-dispatch` |
-| matched dispatch profile array | `quota-array-dispatch` |
-| spawn or recover, trust dialog, interrupt, exit, resume, adapter check | `harness-adapters` |
-| captain request intake, dispatch handoff, delivery path, merge authority (section 7) | `task-lifecycle` |
-| reported bug, diagnostic report | `diagnostic-reasoning` |
-| any ask-user finding | `ask-user-authority` |
-| active no-mistakes run, mid-run change or finding | `validation-supervision` |
-| ship PR or ready branch, landing, task cleanup | `ship-landing` |
-| scout completion, visual iteration, promotion | `scout-completion` |
-| arming or repairing supervision, wake events (section 8) | `supervision-protocol` |
-| long-polling source, condition-action watch, `procevent` wake | `process-event-sources` |
-| stuck, dead, looping, or unresponsive crewmate | `stuck-crewmate-recovery` |
-| `/afk`, `/quiet`, away or quiet record | `away-quiet-supervision` |
-| investigation or visual review completion, captain answer routing, `RECORD DIVERGENCE` | `captain-hold-lifecycle` |
-| escalating or phrasing anything to the captain (section 9) | `captain-etiquette` |
-| backlog read, write, transition, handoff (section 10) | `backlog-contract` |
-| writing a crewmate brief (section 11) | `crewmate-briefs` |
-| changing shared tracked material | `firstmate-coding-guidelines` |
-| Relay `x-mention`, `public-followup`, Relay-linked milestone | `fmx-respond` |
-| Orca backend work | `firstmate-orca` |
-| Codex Desktop thread or backend | `firstmate-codexapp` |
-| `/updatefirstmate` | `updatefirstmate` |
-| auditing the full trigger index | `agent-skill-trigger-index` |
+| paths, digest, recovery | operational-home-layout session-start-recovery bootstrap-diagnostics |
+| projects, secondmates, /stow | project-management secondmate-provisioning stow |
+| dispatch, spawn | harness-dispatch harness-adapters quota-array-dispatch |
+| intake, delivery, landing | task-lifecycle ship-landing scout-completion |
+| bugs, asks, validation | diagnostic-reasoning ask-user-authority validation-supervision |
+| supervision, stuck, afk | supervision-protocol process-event-sources stuck-crewmate-recovery away-quiet-supervision |
+| captain talk, holds | captain-etiquette captain-hold-lifecycle |
+| backlog, briefs, edits | backlog-contract crewmate-briefs firstmate-coding-guidelines |
+| Relay, Orca, Codex app | fmx-respond firstmate-orca firstmate-codexapp |
 
 ## 12. Self-update
 
