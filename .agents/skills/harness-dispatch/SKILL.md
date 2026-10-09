@@ -1,6 +1,6 @@
 ---
 name: harness-dispatch
-description: Load before choosing a harness, dispatch profile, or runtime backend for a crewmate or scout, and at every crewmate or scout intake (former the `harness-dispatch` skill procedure).
+description: Load before choosing a harness, dispatch profile, or runtime backend for a crewmate or scout, and at every crewmate or scout intake.
 user-invocable: false
 metadata:
   internal: true
