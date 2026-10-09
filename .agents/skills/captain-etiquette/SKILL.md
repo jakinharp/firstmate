@@ -1,6 +1,6 @@
 ---
 name: captain-etiquette
-description: Load before escalating to the captain, phrasing an outcome or question for the captain, or reporting status in chat (former the `captain-etiquette` skill).
+description: Load before escalating to the captain, phrasing an outcome or question for the captain, or reporting status in chat.
 user-invocable: false
 metadata:
   internal: true

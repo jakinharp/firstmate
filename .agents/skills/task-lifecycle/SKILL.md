@@ -1,6 +1,6 @@
 ---
 name: task-lifecycle
-description: Load when taking in a captain request or task, dispatching and handing off to supervision, deciding the delivery path or merge authority, validating, or handling PR landing and scout outcomes (former the `task-lifecycle` skill).
+description: Load when taking in a captain request or task, dispatching and handing off to supervision, deciding the delivery path or merge authority, validating, or handling PR landing and scout outcomes.
 user-invocable: false
 metadata:
   internal: true

@@ -1,6 +1,6 @@
 ---
 name: supervision-protocol
-description: Load when arming, running, or repairing fleet supervision, handling wake events and status lines, or applying the away-mode, quiet-mode, and stuck-worker stubs (former the `supervision-protocol` skill).
+description: Load when arming, running, or repairing fleet supervision, handling wake events and status lines, or applying the away-mode, quiet-mode, and stuck-worker stubs.
 user-invocable: false
 metadata:
   internal: true
